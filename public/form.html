@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="project.css">
+	</head>
+	<body>
+		<div>
+			Register a student by filling out the fields below:
+			<hr/>
+			<form action="/users_create" method="post">
+			<div>
+				<label for="studentid">Student Id:</label>
+				<input type="text" name="student_id"></input>
+			</div>
+			<div>
+				<label for="studentname">Student Name:</label>
+				<input type="text" name="student_name"></input>
+			</div>
+			<div>
+				<label for="studentphone">Student Phone:</label>
+				<input type="text" name="student_phone"></input>
+			</div>
+			<div>
+				<label for="studentaddress">Student Address:</label>
+				<input type="text" name="student_address"></input>
+			</div>
+			<div>
+				<label for="studnetemail">Student Email:</label>
+				<input type="text" name="student_email"></input>
+			</div>
+			<div>
+				<label for="coursestaken">Courses Taken:</label>
+				<input type="text" name="courses_taken"></input>
+			</div>
+			<div class="button">
+				<button type="insert">Insert</button>
+			</div>
+			
+		</form>
+			
+		<hr/>
+		Display all students:
+		<form action="/users_get" method="get">
+			<div class="button">
+				<button type="insert">Show</button>
+			</div>
+		</form>
+			
+		Update a student data by filling out the fields below:
+		<hr/>
+			<form action="/users_update" method="post">
+				<input type="hidden" name="_method" value="PUT">
+				<div>
+					<label for="studentid">Student Id:</label>
+					<input type="text" name="student_id"></input>
+				</div>
+				<div>
+					<label for="studentname">Student Name:</label>
+					<input type="text" name="student_name"></input>
+				</div>
+				<div>
+					<label for="studentphone">Student Phone:</label>
+					<input type="text" name="student_phone"></input>
+				</div>
+				<div>
+					<label for="studentaddress">Student Address:</label>
+					<input type="text" name="student_address"></input>
+				</div>
+				<div>
+					<label for="studnetemail">Student Email:</label>
+					<input type="text" name="student_email"></input>
+				</div>
+				<div>
+					<label for="coursestaken">Courses Taken:</label>
+					<input type="text" name="courses_taken"></input>
+				</div>
+				<div class="button">
+					<button type="update">Update</button>
+				</div>
+				
+			</form>
+			
+			Delete a student by filling out the fields below:
+			<hr/>
+			<form action="/users_delete" method="post">
+				<input type="hidden" name="_method" value="DELETE">
+				<div>
+					<label for="studentid">Student Id:</label>
+					<input type="text" name="student_id"></input>
+				</div>
+				<div class="button">
+					<button type="insert">Delete</button>
+				</div>
+			</form>
+		</div>
+	</body>
+</html>
